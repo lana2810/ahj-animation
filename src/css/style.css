@@ -1,0 +1,45 @@
+.container {
+  width: 80%;
+  padding: 1rem;
+  margin: 20px auto 20px auto;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: rgb(37, 81, 212);
+  border-radius: 10px;
+}
+.btn:hover {
+  border: 3px solid hsl(193, 100%, 50%);
+}
+.text {
+  max-height: 0px;
+  margin: 1rem 0 1rem 0;
+  border: 1px dashed gray;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.copy {
+  text-align: right;
+}
+.move {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  from {
+    max-height: 0px;
+  }
+
+  to {
+    max-height: 600px;
+  }
+}
